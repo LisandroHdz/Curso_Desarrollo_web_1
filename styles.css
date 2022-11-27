@@ -1,0 +1,23 @@
+.opciones {
+    text-align: left;
+    background-color: rgb(161, 214, 144);
+    border: 5px groove brown;
+    cursor: pointer;
+    font-size: 30px;
+
+}
+
+h1{
+    text-align: center;
+    color: chocolate;
+    font-style: oblique;
+    font-size: 60px;
+}
+
+#frase{
+    text-align: center;
+    text-decoration: underline;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+

@@ -4,76 +4,95 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./contacto.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Andika:wght@700&display=swap" rel="stylesheet">
     <title>Contacto</title>
 </head>
 <body>
     <header>
-        <nav>
-            <ul>
-                <li>
-                    <a href="./index.html">Inicio</a>  
-                </li>
-                <li>
-                    <a href="./quienes-somos.html">Quienes somos</a>  
-                </li>
-                <li>
-                    <a href="./comprar.html">Comprar</a>  
-                </li>
-                <li>
-                    <a href="./contacto.html">Contacto</a>  
-                </li>
-            </ul>
-
-        </nav>
-        <div>
-            <img src="./LOGO.png" alt="Logo de Tecvia3D">
+        <div class="caja">
+            <h1><img class="logo1" src="./CHANO (2).png"></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="contacto.html">contacto</a></li>
+                    <li><a href="comprar.html">comprar</a></li>
+                    <li><a href="quienes-somos.html">quienes-somos</a></li>
+                    <li><img class="logo2" src="./Logo Florista Circular Blanco Negro.png"></li>
+                </ul>
+            </nav>
         </div>
-
     </header>
-    <main>
-        <h1>Contactanos</h1>
-        <section>
-            <form>
-                <label for="">Ingresar su nombre</label>
-                <input type="text" name="" id="">
-                <label for="">Ingresar tu apellido</label>
-                <input type="text" name="" id="">
-                <label for="">Cuantos años tienes?</label>
-                <input type="number" name="" id="">
-                <input type="email" name="" placeholder="Ingresa tu email">
-                <input type="password" name="" placeholder="Ingresa tu contraseña">
-                <div>
-                    <textarea name="" id="" cols="30" rows="10" placeholder="Envianos tus dudas"></textarea>
-                </div>
-                <div>
-                    <h3>Tipo de pedido</h3>
-                    <label for="">retiro en el local</label>
-                    <input type="radio" name="Tipo de pedido">
-                    <label for="">Delivery</label>
-                    <input type="radio" name="Tipo de pedido">
-                </div>
-                <div>
-                    <label for="">Pesos mexicanos</label>
-                    <input type="checkbox">
-                    <label for="">Dolares</label>
-                    <input type="checkbox">
-                    <label for="">Euros</label>
-                    <input type="checkbox">
-                    <label for="">Libras Esterlinas</label>
-                    <input type="checkbox">
-                </div>
-                <div>
-                    <p>Que quieres pedirnos?</p>
-                    <select name="" id="">
-                        <option value="Esferas">Esferas</option>
-                        <option value="Llaveros">Llaveros</option>
-                        <option value="Arbol de navidad">Arbol de navidad</option>
-                    </select>
-                </div>
-                <input type="submit" value="Enviar formulario">
+        <main>
+        <form>
+            <label for="nombreapellido">Nombre</label>
+            <input type="text" id="nombreapellido" required>
 
-            </form>
-        </section>
+            <label for="nombreapellido">Apellido</label>
+            <input type="text" id="nombreapellido" required>
+
+            <label for="correoelectronico">Correo Electrónico</label>
+            <input type="email" id="correoelectronico">
+
+            <label for="telefono">Telefono</label>
+            <input type="tel" id="telefono" required>
+            <label for="mensaje">Mensaje</label>
+            <textarea cols="70" rows="10" id="mensaje" class="input-padron"></textarea>
+
+            <fieldset>
+                <legend>¿Cómo le gustaría que lo contactemos?</legend>
+            
+                <label for="radio-email"><input type="radio" name="contacto" value="email" id="radio-email">Email</label>
+            
+                <label for="radio-telefono"><input type="radio" name="contacto" value="telefono" id="radio-telefono">Teléfono</label>
+            
+                <label for="radio-whatsapp"><input type="radio" name="contacto" value="whatsapp" id="radio-whatsapp" checked>WhatsApp</label>
+            
+            </fieldset>
+            <fieldset>
+                <legend>¿En cuál horario prefiere ser atendido?</legend>
+                <select>
+                    <option>Mañana</option>
+                    <option>Tarde</option>
+                    <option>Noche</option>
+                </select>
+            </fieldset>
+            
+            <label class="checkbox"><input type="checkbox" checked>Le gustaría recibir información sobre Tecvia3D</label>     
+            
+
+            <input type="submit" value="Enviar formulario" class="enviar">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Dia</th>
+                        <th>horario</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>lunes</td>
+                        <td>08h - 20h</td>
+                    </tr>
+                    <tr>
+                        <td>miercoles</td>
+                        <td>08h - 20h</td>
+                    </tr>
+                    <tr>
+                        <td>viernes</td>
+                        <td>08h - 20h</td>
+                    </tr>
+                </tbody>
+            </table>
+        </form>
     </main>
+        <footer class="footer">
+            <img src="./CHANO (2).png" alt="footer" width="300px">
+            <p class="pie">&copy Copyright Tecvia3D - 2022</p>
+        </footer>
+    
 </body>
 </html>

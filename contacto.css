@@ -1,0 +1,153 @@
+header {
+    background: gray;
+    padding: 5px 0;
+  }
+  
+  .logo1{
+    width: 250px;
+  }
+  .logo2{
+    width: 100px;
+  }
+  
+  .caja{
+    width: auto;
+    position: relative;
+    margin: 0 auto;
+  }
+  
+  nav{
+    position: absolute;
+    top: 50px;
+    right: 0;
+  }
+  nav li {
+    display: inline;
+    margin: 0 0 0 40px;
+  }
+  
+  nav a {
+    text-transform: uppercase;
+    color: #f1eded;
+    font-weight: bold;
+    font-size: 30px;
+    text-decoration: none;
+    font-family: 'Andika', sans-serif;
+  
+  }
+  
+  nav a:hover{
+    color: #c78c19;
+    text-decoration: underline;
+  }
+  
+main {
+    width: 940px;
+    margin: 0 auto;
+}
+
+form {
+    margin: 40px 10px;
+}
+
+form label {
+
+    font-size: 20px;
+    margin: 0 0 20px;
+}
+
+form input {
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px 25px;
+    width: 70%;
+}
+
+form label {
+    display:block;
+    font-size: 20px;
+    margin: 0 0 10px;
+}
+
+form label, form legend {
+    display:block;
+    font-size: 20px;
+    margin: 0 0 10px;
+}
+
+form input {
+    display: inline;
+    margin: 0 0 20px;
+    padding: 10px 25px;
+    width: 30%;
+}
+
+.checkbox {
+    margin: 20px 0;
+
+}
+
+.enviar{
+    width: 50%;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background: orange;
+    border-radius: 5px;
+    border: none;
+}
+
+.enviar:hover{
+    background: red;
+    font-size: 30px;
+    transition: 5s;
+    cursor: pointer;
+    transform: scale(1.2);
+
+}
+table{
+    margin: 40px 40px;
+}
+
+thead{
+    background: #555555;
+    font-weight: bold;
+}
+
+td, th{
+    border: 1px solid #000000;
+    padding: 8px 15px;
+}
+
+
+.footer{
+    background: url(./bg.jpg);
+  
+  }
+  
+  footer{
+    text-align: center;
+    color: white;
+  }
+  
+  @media (max-width: 480px) {
+    .logo1{
+        width: 100px;
+        margin: 0 0 0px 150px;
+    }
+    .logo2{
+      width: 10px;
+    }
+    nav{
+        position:initial;
+        font-size: 5px;
+    }
+    .enviar{
+        width: 360px;
+    } 
+    .checkbox, .footer, .responsivo{
+        width: auto;
+  
+    }

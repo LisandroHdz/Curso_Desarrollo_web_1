@@ -5,11 +5,13 @@
     <meta name="viewport" content="with=device-width" >
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=div, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="./reset.css">
     <link rel="stylesheet" href="./styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Andika:wght@700&display=swap" rel="stylesheet">
+    
 <title>Document</title>
 </head>
 
@@ -21,48 +23,129 @@
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="contacto.html">contacto</a></li>
-                    <li><a href="comprar.html">comprar</a></li>
-                    <li><a href="quienes-somos.html">quienes-somos</a></li>
+                    <li><a href="https://tecvia3d.study/">comunidades</a></li>
                     <li><img class="logo2" src="./Logo Florista Circular Blanco Negro.png"></li>
                 </ul>
             </nav>
         </div>
     </header>
   <main class="body">
-        <img src="./1.png" alt="imagen central" class="imagen1">
-        <section class="fragmento">
-            <h2>Sobre TECVIA 3D</h2>
-            <img src="./2.png" alt="utensilios" class="utensilios">
-            <p>Somos un Ecommerce que te facilita el poder cambiarte de hogar, enfocados en los estudiantes foraneos que llegan recien a las cudades para seguir su formación            <br>
-            <br> 
-            <em> Nuestra misión es: <strong> "Proporcionar autoestima y calidad de vida a nuestros clientes". </strong></em><br><br>    
-                Ofrecemos la calidez de nuestras comunidades, para que el cambio y transición de estilo de vida sea de lo mejor, esperamos poder ayudarte para que en un futuro seas un guía y aportes mucho apoyo a nuevos estudiantes.
-                </p>
-        </section>
-        <section class="mapa">
-            <h2>NUESTRA UBICACION</h2>
-            <br>
-            <P>Nuestro establecimiento se encuentra ubicado en el corazon de la ciudad de Puebla</P>
-            <br>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d120689.12363137746!2d-98.26300614476509!3d19.040196275045144!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cfc0bd5ebc7a3b%3A0x48a6461de494ad95!2sPuebla%2C%20Pue.!5e0!3m2!1ses-419!2smx!4v1672811862809!5m2!1ses-419!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></section>
-          <section class="diferenciales">
-            <h2>DIFERENCIALES</h2>
-            <br>
-            <ul class="lista">
-                <li> 1️⃣ Atencion personalizada a los estudiantes</li>
-                <br>
-                <li>2️⃣ Espacio diferenciado</li>
-                <br>
-                <li>3️⃣ Mejores ubicaciones de renta de cuartos</li>
-                <br>
-                <li>4️⃣ Comunidades estudiantiles</li>
-            </ul>
-            <img src="./LOGO.png" alt="peluquero" class="peluquero">
-
-            <div class="video">
-              <iframe width="560" height="315" src="https://www.youtube.com/embed/uclDGx0GLz8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> 
+            <div class="productos">
+                <h2> ¿EN BUSCA DE ROMMIES? </h2>
+                <ul>
+                    <li>
+                        <h2>Casa Tech</h2>
+                        <img src="./tech.jpg" class="imag" alt="cabello">
+                        <p class="producto-descripcion">Somos estudiantes de la facultad de Ingeniería estamos buscando un Rommie</p>
+                        <p class="product-precio">$1500.00</p>
+                        <input type="submit" value="Reservar" class="enviar">
+                    </li>
+                    <li>
+                        <h2>Bio Room</h2>
+                        <img src="./bio.jpg" class="imag" alt="">
+                        <p class="producto-descripcion">¿Estudiante de la salud? estamos en busca de nuevos integrantes en nuestro depatamento</p>
+                        <p class="product-precio">$2000.00</p>
+                        <input type="submit" value="Reservar" class="enviar">
+                    </li>
+                    <li>
+                        <h2 id="cons">Constructores</h2>
+                        <img src="./arch.jpg" class="imag" alt="">
+                        <p class="producto-descripcion">Estamos buscando a un rommie que estudie Arquitectura o Ingeniería civil</p>
+                        <p class="product-precio">$2500.00</p>
+                        <input type="submit" value="Reservar" class="enviar">
+                    </li>
+                </ul>
             </div>
-        </section>
+
+            <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="./img_tienda/casa_tech.png" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./img_tienda/cons.png" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./img_tienda/bio_room.png" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+
+            <div>
+                <h2>TIENDA</h2>
+            </div>
+
+            <div class="row row-cols-1 row-cols-md-3 g-4">  
+                <div class="col">
+                  <div class="card">
+                    <img src="./img_tienda/cabeza_star.jpg" class="card-img-top" alt="cabeza_star"">
+                    <div class="card-body">
+                      <h5 class="card-title">Maceta Stars</h5>
+                      <p class="card-text">$80.00</p>
+                      <input type="submit" value="COMPRAR" class="enviar">
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card">
+                    <img src="./img_tienda/poke.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Maceta Pokemon</h5>
+                      <p class="card-text">$100.00</p>
+                      <input type="submit" value="COMPRAR" class="enviar">
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                      <img src="./img_tienda/elep.jpg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">Maceta Elefante</h5>
+                        <p class="card-text">$100.00</p>
+                        <input type="submit" value="COMPRAR" class="enviar">
+                      </div>
+                    </div>
+                </div>
+                <div class="col">
+                  <div class="card">
+                    <img src="./img_tienda/robert.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Maceta Robert</h5>
+                      <p class="card-text">$100.00</p>
+                      <input type="submit" value="COMPRAR" class="enviar">
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                      <img src="./img_tienda/geo.jpg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">Maceta Geo</h5>
+                        <p class="card-text">$100.00</p>
+                        <input type="submit" value="COMPRAR" class="enviar">
+                      </div>
+                    </div>
+                </div>
+                <div class="col">
+                  <div class="card">
+                    <img src="./img_tienda/yoda.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Maceta Yoda</h5>
+                      <p class="card-text">$80.00</p>
+                      <input type="submit" value="COMPRAR" class="enviar">
+                    </div>
+                </div>
+                </div>
+              </div>
+        
         
     </main>
   
@@ -70,7 +153,7 @@
         <img src="./CHANO (2).png" alt="footer" width="300px">
         <p class="pie">&copy Copyright Tecvia3D - 2022</p>
     </footer>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 </body>
->>>>>>> 3288c3aba962b8d04a5f5e950d713e79edf54eb2
+
 </html>

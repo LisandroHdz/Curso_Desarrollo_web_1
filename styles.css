@@ -1,6 +1,5 @@
-<<<<<<< HEAD
 header {
-  background: gray;
+  background-image: linear-gradient(to right top, #051937, #231437, #370c2f, #450420, #4a070d);
   padding: 5px 0;
 }
 
@@ -73,195 +72,65 @@ h2{
 em strong{
   color: red;
 }
-.mapa{
-  padding: 3em 0;
-  font-size: 20px;
-  text-align: center;
-  font-family: 'Andika', sans-serif;
-  background: linear-gradient(#FEFEFE, #888888);
-
-}
-.imagen1{
-  width: 100%;
-}
 
 
-.diferenciales{
-  background-color: #888888;
-}
 .lista{
   display: inline-block;
   font-size: 30px;
   font-family: 'Andika', sans-serif;
   vertical-align: top;
-  width: 20%;
-  margin-right: 10%;
+  width: 30%;
+  margin-right: 30%;
   margin-left: 5%;
 }
 
-.peluquero{
-  width: 60%;
-  box-shadow: 10px 10px 30px 25px #000000;
 
-}
-
-.peluquero:hover{
-  opacity: 0.3;
-  transition: 400ms;
-  
-}
-
-.video{
-  width: 560px;
+.productos{
   margin: 0 auto;
+  padding: 10px;
 }
 
-.footer{
-  background: url(./bg.jpg);
-
-}
-
-footer{
+.productos li{
+  display: inline-block;
   text-align: center;
-  color: white;
+  width: 30%;
+  vertical-align: top;
+  margin: 0 1.5%;
+  padding: 30px 20px;
+  box-sizing: border-box;
+  border: 2px #000000 dotted;
+  border-radius: 50px;
+
 }
 
-@media (max-width: 480px) {
-  .logo1{
-      width: 100px;
-      margin: 0 0 0px 150px;
-  }
-  .logo2{
-    width: 10px;
-  }
-  nav{
-      position:initial;
-      font-size: 5px;
-  }
-  .caja, .body, .mapa, .diferenciales, .video, .footer{
-      width: auto;
+.productos li:hover{
+  border-color: #c78c19;
 
-  }
-  .lista, .peluquero, .video{
-      width: 100%;
-  }
 }
 
-=======
-header {
-  background: gray;
-  padding: 5px 0;
+.productos li:active{
+  border-color: #088c19;
 }
-
-.logo1{
-  width: 250px;
-}
-.logo2{
-  width: 100px;
-}
-
-.caja{
-  width: auto;
-  position: relative;
-  margin: 0 auto;
-}
-
-nav{
-  position: absolute;
-  top: 50px;
-  right: 0;
-}
-nav li {
-  display: inline;
-  margin: 0 0 0 40px;
-}
-
-nav a {
-  text-transform: uppercase;
-  color: #f1eded;
+.productos h2{
+  font-size: 30px;
   font-weight: bold;
-  font-size: 30px;
-  text-decoration: none;
-  font-family: 'Andika', sans-serif;
-
 }
 
-nav a:hover{
-  color: #c78c19;
-  text-decoration: underline;
+.productos li:hover h2{
+  font-size: 33px;
 }
 
-
-.utensilios{
-  width: 120px;
-  float: left;
-  margin: 0 20px;
+.producto-descripcion{
+  font-size: 18px;
 }
 
-
-
-.body h2{
-  text-align: center;
-  font-size: 30px;
-  text-decoration: underline;   
-
-}
-
-h2{
-  margin: 0 0 15px 0;
-}
-
-.fragmento{
-  padding: 30px;
+.product-precio{
   font-size: 20px;
-  text-align: center;
-  font-family: 'Andika', sans-serif;
-
+  font-weight: bold;
+  margin-top: 10px;
 }
-
-em strong{
-  color: red;
-}
-.mapa{
-  padding: 3em 0;
-  font-size: 20px;
-  text-align: center;
-  font-family: 'Andika', sans-serif;
-  background: linear-gradient(#FEFEFE, #888888);
-
-}
-.imagen1{
-  width: 100%;
-}
-
-
-.diferenciales{
-  background-color: #888888;
-}
-.lista{
-  display: inline-block;
-  font-size: 30px;
-  font-family: 'Andika', sans-serif;
-  vertical-align: top;
-  width: 20%;
-  margin-right: 10%;
-  margin-left: 5%;
-}
-
-.peluquero{
-  width: 60%;
-  box-shadow: 10px 10px 30px 25px #000000;
-
-}
-
-.peluquero:hover{
-  opacity: 0.3;
-  transition: 400ms;
-  
-}
-
-.video{
-  width: 560px;
+.imag{
+  width: 250px;
   margin: 0 auto;
 }
 
@@ -281,20 +150,27 @@ footer{
       margin: 0 0 0px 150px;
   }
   .logo2{
-    width: 10px;
+    width: 100px;
   }
   nav{
       position:initial;
       font-size: 5px;
   }
-  .caja, .body, .mapa, .diferenciales, .video, .footer{
+  .footer{
       width: auto;
 
   }
-  .lista, .peluquero, .video{
-      width: 100%;
+  .imag{
+    width: 100px;
+    margin: 0 auto;
+  }
+  .productos {
+    display: flexbox;
+    padding: 30px 20px;
+    text-align: center;
+  }
+  #cons{
+    font-size: 15px;
   }
 }
 
->>>>>>> 3288c3aba962b8d04a5f5e950d713e79edf54eb2
-*/

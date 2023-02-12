@@ -161,16 +161,21 @@ footer{
 
   }
   .imag{
-    width: 100px;
+    width: 70%;
     margin: 0 auto;
   }
-  .productos {
-    display: flexbox;
-    padding: 30px 20px;
+  .productos li{
+    margin: 0 0 20px 20px;
+    display: inline-block;
     text-align: center;
+    position:relative;
+    width: 90%;
+    font-size: 9px;
   }
-  #cons{
-    font-size: 15px;
+  .enviar{
+    width: 40%;
+    font-size: 20px;
   }
+
 }
 
